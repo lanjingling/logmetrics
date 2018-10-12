@@ -8,17 +8,10 @@
 
 二、使用：</br>
 1.mvn deploy该项目到本地私服（没有发布到maven中央仓库）；使用的时候通过如下方式引入：</br>
-![logmetrics-graphite](https://raw.githubusercontent.com/lanjingling/logmetrics/master/maven.png)
+![logmetrics-graphite](https://raw.githubusercontent.com/lanjingling/logmetrics/master/mvn.png)
 
 2.通过spring初始化：</br>
-<!-- log-metrics   --> 
-<bean id="graphiteMetricFactory" class="com.lanjingling.logmetrics.GraphiteMetricFactory"  destroy-method="close"> 
-	<property name="projectName" value="h5_engine_server"/> 
-	<property name="graphiteHost" value="10.135.16.14" />
-	<property name="graphitePort" value="2003" />
-	<property name="timers" value="rec_cost" />
-	<property name="counters" value="default_rec,recall_error,predict_error,select_error" />
-</bean>
+![logmetrics-graphite](https://raw.githubusercontent.com/lanjingling/logmetrics/master/spr.png)
 
 3.在代码中如下方式：</br>
 1）记录耗时</br>
