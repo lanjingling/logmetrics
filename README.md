@@ -1,2 +1,4 @@
 # logmetrics
-在java代码中，将一些业务指标、性能指标通过logmetrics发送到graphite
+在java代码中，将一些业务指标、性能指标通过logmetrics发送到graphite.
+
+log-metrics是在metrics基础上封装了一层通用逻辑，通过maven引入log-metrics框架后，在你的工程中就可以轻松的收集业务代码耗时、业务逻辑调用次数等多项指标到graphite，最后通过grafana图标展示。
